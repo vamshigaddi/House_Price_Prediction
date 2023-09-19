@@ -9,10 +9,17 @@ Customers must fill out a form, either physically or online, to apply for a cred
 In this project, we’ll be using Credit Card Approval Dataset from Kaggle. The structure of our project will be as follows —
 
 Basic introduction of the project
+
 What’s the business problem associated with it and how is it going to impact the banking sector?
+
 Basic Exploration of the dataset.
+
 Exploratory Data Analysis (EDA) and Data Preprocessing
+
 Feature Engineering
+
 Applying different Machine Learning models that can predict if an individual’s application for a credit card will be accepted or not.
+
 Performing Hyperparameter Tuning to optimize the performance of models
+
 Summarizing the results
