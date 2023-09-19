@@ -1,3 +1,5 @@
+Credit-Card-Approval Prediction
+
 This project is aimed at building a predictive model to predict whether a credit card application should be approved or rejected. The results include summaries from five different predictive models.
 
 A bank's credit card department is one of the top adopters of data science. A top focus for the bank has always been acquiring new credit card customers. Giving out credit cards without doing proper research or evaluating applicants' creditworthiness is quite risky. The credit card department has been using a data-driven system for credit assessment called Credit Scoring for many years, and the model is known as an application scorecard. A credit card application's cutoff value is determined using the application scorecard, which also aids in estimating the applicant's level of risk. This decision is made based on strategic priority at a given time.
