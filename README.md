@@ -29,7 +29,7 @@ The dataset used for this model includes several features relevant to house pric
 The dataset is preprocessed to handle missing values, outliers, and categorical variables.
 Example input CSV format:
 
-| location                | size      | total_sqft | bath | price |
+| location                | size      | total_sqft | bath | price(Lakhs) |
 |-------------------------|-----------|------------|------|-------|
 | Electronic City Phase II| 2 BHK     | 1056       | 2    | 39.07 |
 | Chikka Tirupathi        | 4 Bedroom | 2600       | 5    | 120   |
