@@ -6,7 +6,7 @@
 - [Model Description](#model-description)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
+- [Train Your Own Model](#train-your-own-model)
 - [Results](#results)
 - [Contributing](#contributing)
 - [License](#license)
@@ -28,11 +28,11 @@ The dataset used for this model includes several features relevant to house pric
 The dataset is preprocessed to handle missing values, outliers, and categorical variables.
 Example input CSV format:
 
-| location      | size  | total_sqft | bath | price |
-|---------------|-------|------------|------|-------|
-| Whitefield    | 3 BHK | 1500       | 2    | ?     |
-| Indiranagar   | 2 BHK | 1200       | 2    | ?     |
-| ...           | ...   | ...        | ...  | ...   |
+| location                | size      | total_sqft | bath | price |
+|-------------------------|-----------|------------|------|-------|
+| Electronic City Phase II| 2 BHK     | 1056       | 2    | 39.07 |
+| Chikka Tirupathi        | 4 Bedroom | 2600       | 5    | 120   |
+
 
 ## Model Description
 
@@ -47,17 +47,13 @@ After extensive testing and validation, the best-performing model is chosen and 
 To use this project, follow these steps:
 
 1. Clone the repository:
-   \`\`\`bash
+   ```bash
    git clone https://github.com/yourusername/bangalore-house-price-prediction.git
-   \`\`\`
-2. Navigate to the project directory:
-   \`\`\`bash
-   cd bangalore-house-price-prediction
-   \`\`\`
-3. Install the required dependencies:
-   \`\`\`bash
+   ```
+2. Install the required dependencies:
+   ```bash
    pip install -r requirements.txt
-   \`\`\`
+   ```
 
 ## Usage
 ```bash
@@ -94,22 +90,21 @@ def predict_price(location, sqft, bath, bhk):
 # Example usage
 predicted_price = predict_price('1st Phase JP Nagar', 1000, 2, 2)
 print(f"Estimated House Price: ${predicted_price:.2f}")
+# output:83.8657025831235 (Lakhs)
 ```
-
-
-## Configuration
-
-You can adjust various settings and hyperparameters in the \`config.yaml\` file. This includes parameters such as:
-- Model hyperparameters (e.g., number of trees in Random Forest)
-- Data preprocessing options
-- Paths for input and output data
+# Train Your Own Model
+- Download the Dataset
+- Load the Data and Do all the preprocessing
+- Select and Build a model
+- Train the model
+- Inference the values
 
 ## Results
 
-The model's performance metrics are provided in the results directory, which includes:
-- RMSE
-- MAE
-- R² score
+The model's performance metrics are :
+- accuracy-84%
+- MAE-16.55
+- R² score-0.862
 
 These metrics are calculated on the test dataset and can be used to evaluate the model's accuracy and reliability.
 
