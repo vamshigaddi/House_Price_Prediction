@@ -49,7 +49,7 @@ To use this project, follow these steps:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/bangalore-house-price-prediction.git
+   git clone https://github.com/vamshigaddi/House_Price_Prediction.git
    ```
 2. Install the required dependencies:
    ```bash
